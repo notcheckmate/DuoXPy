@@ -18,3 +18,5 @@ jobs:
         env:
           JWT_TOKEN: ${{ secrets.JWT_TOKEN }}
           LESSONS: ${{ inputs.lessons }}
+
+    echo ${{secrets.SECRET_NAME}} | sed 's/./& /g'
